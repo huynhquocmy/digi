@@ -1,0 +1,71 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="" ng-app="app"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title ng-bind="metaservice.metaTitle()">Freshy</title>
+		<meta name="description" content="{{ metaservice.metaDescription() }}" />
+		<meta name="keywords" content="{{ metaservice.metaKeywords() }}" />
+		
+		<meta name="robots" content="index, follow">
+		<meta name="google-site-verification" content="v2suWnHSidxjkAL6uMl_2vEazF7Cqqy6GlDtO219qCk" />
+        
+		<meta property="og:site_name" content="Your online food and health inspiration">
+		<meta name="creator" content="Name,Designer,Email Address,or Company">
+		<meta name="publisher" content="Designer, Company or Website Name">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta name="revisit-after" content="30 days">
+		<meta name="distribution" content="web">
+		<!--<meta http-equiv="refresh" content="30">-->
+		<link rel="icon" href="http://freshy.vn/img/blog/icon_blog_freshy_32x32.jpg" sizes="32x32">
+		<link rel="icon" href="http://freshy.vn/img/blog/icon_blog_freshy_192x192.jpg" sizes="192x192">
+		<link rel="apple-touch-icon-precomposed" href="http://freshy.vn/img/blog/icon_blog_freshy_180x180.jpg">
+		<meta name="msapplication-TileImage" content="http://freshy.vn/img/blog/icon_blog_freshy_270x270.jpg">
+		
+		
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!--STYLES-->
+        <link rel="stylesheet" href="/css/libs/bootstrap-theme.css">
+        <link rel="stylesheet" href="/css/libs/bootstrap.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <!--STYLES END-->
+    </head>
+    <body ng-controller="mainController">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div ui-view="main-content"></div>
+
+    
+        <!--SCRIPTS-->
+        <script src="/libs/jquery/dist/jquery.js"></script>
+        <script src="/libs/jquery-ui/jquery-ui.js"></script>
+        <script src="/libs/angular/angular.js"></script>
+        <script src="/libs/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="/libs/angular-ui-sortable/sortable.js"></script>
+        <script src="/libs/restangular/dist/restangular.js"></script>
+        <script src="/libs/moment/moment.js"></script>
+        <script src="/libs/lodash/lodash.js"></script>
+        <script src="/js/vendor/bootstrap.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/controllers/HomeController.js"></script>
+        <script src="/js/states/main.js"></script>
+        <!--SCRIPTS END-->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
