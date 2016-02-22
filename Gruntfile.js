@@ -58,14 +58,14 @@
 				},
 				files: {
 					'<%= setting.app %>/index.html': [
-						'libs/jquery/dist/jquery.js',
-						'libs/jquery-ui/jquery-ui.js',
-						'libs/angular/angular.js',
-						'libs/angular-ui-router/release/angular-ui-router.js',
-						'libs/angular-ui-sortable/sortable.js',
-						'libs/restangular/dist/restangular.js',
-						'libs/moment/moment.js',
-						'libs/lodash/lodash.js',
+						'bower_components/jquery/dist/jquery.js',
+						'bower_components/jquery-ui/jquery-ui.js',
+						'bower_components/angular/angular.js',
+						'bower_components/angular-ui-router/release/angular-ui-router.js',
+						'bower_components/angular-ui-sortable/sortable.js',
+						'bower_components/restangular/dist/restangular.js',
+						'bower_components/moment/moment.js',
+						'bower_components/lodash/lodash.js',
 						'js/vendor/**/*.js',
 						'js/app.js',
 
