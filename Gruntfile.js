@@ -71,6 +71,7 @@
 
 						'js/controllers/**/*.js',
 						'js/states/**/*.js',
+						'js/directives/*.js',
 						'js/main.js'
 					]
 				}
