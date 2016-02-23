@@ -1,0 +1,29 @@
+header .menu {
+  position: absolute;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+header .banner .content {
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  color: #fff;
+}
+
+header .banner .content .website-name {
+  font-size: 55px;
+  font-weight: bold;
+  color: #fff;
+}
+
+header .banner .content .slogan {
+  margin: 25px 0px;
+}
+
+header .banner .content .buttons .btn {
+  min-width: 150px;
+  margin: 0px 20px;
+}

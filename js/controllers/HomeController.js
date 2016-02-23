@@ -40,7 +40,7 @@ angular.module('app')
 	
 	//nnlu073
 	$rootScope.metaservice = MetaService;
-    $rootScope.metaservice.set("Freshy","Your online food and health inspiration","freshy_home");
+    $rootScope.metaservice.set('Digi',"Digi","digi-home");
 	
 }])
 

@@ -86,6 +86,8 @@
 				},
 				files: {
 					'<%= setting.app %>/index.html': [
+						'bower_components/bootstrap/dist/css/bootstrap.min.css',
+						'bower_components/components-font-awesome/css/font-awesome.min.css',
 						'css/libs/**/*.css',
 						'css/*.css'
 					]
