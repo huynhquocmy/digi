@@ -17,5 +17,4 @@ angular.module('app').config(['$stateProvider', function config($stateProvider) 
 
 angular.module('app').controller('mainController', ['$scope', 'Restangular', '$state', '$rootScope',
 function ($scope, Restangular, $state, $rootScope) {
-	// put your code here
-}])
+}]);

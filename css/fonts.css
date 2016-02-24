@@ -1,0 +1,46 @@
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+@import url('//fonts.googleapis.com/css?family=Roboto:400,300,500,700');
+
+@font-face {
+  font-family: 'MuseoSans';
+  src: url("../fonts/MuseoSans-Regular.eot");
+  src: url("../fonts/MuseoSans-Regular.eot") format('embedded-opentype'),
+        url("../fonts/MuseoSans-Regular.woff") format('woff'),
+        url("../fonts/MuseoSans-Regular.ttf") format('truetype'),
+        url("../fonts/MuseoSans-Regular.svg#MuseoSans-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansRounded';
+  src: url("../fonts/MuseoSansRounded-500.eot");
+  src: url("../fonts/MuseoSansRounded-500.eot") format('embedded-opentype'),
+        url("../fonts/MuseoSansRounded-500.woff") format('woff'),
+        url("../fonts/MuseoSansRounded-500.ttf") format('truetype'),
+        url("../fonts/MuseoSansRounded-500.svg#MuseoSansRounded-500") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansRounded-Bold';
+  src: url("../fonts/MuseoSansRounded-700.eot");
+  src: url("../fonts/MuseoSansRounded-700.eot") format('embedded-opentype'),
+        url("../fonts/MuseoSansRounded-700.woff") format('woff'),
+        url("../fonts/MuseoSansRounded-700.ttf") format('truetype'),
+        url("../fonts/MuseoSansRounded-700.svg#MuseoSansRounded-700") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansRounded-900';
+  src: url("../fonts/MuseoSansRounded-900.eot");
+  src: url("../fonts/MuseoSansRounded-900.eot") format('embedded-opentype'),
+        url("../fonts/MuseoSansRounded-900.woff") format('woff'),
+        url("../fonts/MuseoSansRounded-900.ttf") format('truetype'),
+        url("../fonts/MuseoSansRounded-900.svg#MuseoSansRounded-900") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -2,6 +2,9 @@ angular.module('app')
 .controller('HomeController', ['$scope', '$timeout', 'Restangular', '$rootScope', 'MetaService', function ($scope, $timeout, Restangular, $rootScope, MetaService) {
 	$scope.isLoadMore = false;
 	$scope.baseUrl = 'http://media.freshy.vn/product_images/';
+    $(document).ready(function(){
+      $('.partners').bxSlider({minSlides: 5, maxSlides: 10, slideWidth: 200});
+    });
 
 	$scope.showMore = function (el) {
 		$scope.isLoadMore = !$scope.isLoadMore;

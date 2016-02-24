@@ -1,0 +1,13 @@
+html { font-size: 62.5%;}
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,700,400italic);
+body{
+  font-family: "museo-sans-rounded", MuseoSansRounded, MuseoSans, OpenSans, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 140%;
+  color: #000;
+  font-smoothing:         antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing:    antialiased;
+  -o-font-smoothing:      antialiased;
+  font-weight: 300;
+}

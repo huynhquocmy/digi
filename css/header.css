@@ -1,0 +1,11 @@
+header {
+
+}
+
+header .menu .nav > li > a {
+  color: #fff;
+}
+
+header .menu .nav > li > a:focus, header .menu.nav > li > a:hover {
+  color: #54b9c3;
+}

@@ -64,6 +64,9 @@
 						'bower_components/angular-ui-router/release/angular-ui-router.js',
 						'bower_components/angular-ui-sortable/sortable.js',
 						'bower_components/restangular/dist/restangular.js',
+						'bower_components/bxslider-4/dist/vendor/jquery.easing.1.3.js',
+						'bower_components/bxslider-4/dist/vendor/jquery.fitvids.js',
+						'bower_components/bxslider-4/dist/jquery.bxslider.min.js',
 						'bower_components/moment/moment.js',
 						'bower_components/lodash/lodash.js',
 						'js/vendor/**/*.js',
@@ -88,6 +91,7 @@
 					'<%= setting.app %>/index.html': [
 						'bower_components/bootstrap/dist/css/bootstrap.min.css',
 						'bower_components/components-font-awesome/css/font-awesome.min.css',
+						'bower_components/bxslider-4/dist/jquery.bxslider.min.css',
 						'css/libs/**/*.css',
 						'css/*.css'
 					]
