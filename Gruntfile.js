@@ -18,19 +18,38 @@
 			dist: 'www',
 			assets: 'assets'
 		},
+		'sass': {
+			dev: {
+				files: [{
+					expand: true,
+					src: ['*.scss'],
+					cwd: 'css/scss',
+					dest: 'css',
+					ext: '.css'
+				}]
+			}
+		},
+
+		coffee: {
+			app: {
+				src: ['coffee/**/*.coffee'],
+				dest: 'js'
+			}
+		},
 
 		// Watches files for changes and runs tasks based on the changed files
 		watch: {
 			css: {
-				files: 'content/css/scss/*.scss',
-				tasks: ['sass'],
+				files: 'css/scss/*.scss',
+				tasks: ['sass', 'asset-linker:devCss'],
 				options: {
 					spawn: false,
 					livereload: true
 				}
 			},
 			js: {
-				files: ['<%= setting.app %>/app/{,*/}*.js'],
+				files: 'js/**/*.js',
+				tasks: ['asset-linker:devJs'],
 				options: {
 					spawn: false,
 					livereload: true
@@ -100,41 +119,9 @@
 		}
 	});
 
-	var localDevTasks = [
-		'asset-linker:devJs',
-		'asset-linker:devCss',
-		'watch'
-	];
-
-	grunt.registerTask('serve', function (target) {
-		if (target === 'dist') {
-			return grunt.task.run(['build', 'connect:dist:keepalive']);
-		}
-
-		if (target === 'dev') {
-			return grunt.task.run([
-				'ngconstant:dev',
-				'clean:dist',
-				'clean:assets',
-				'bowerInstall',
-				'clean:css', 'sass', 'autoprefixer',
-				'asset-linker:devJs', 'asset-linker:devCss',
-				'concat',
-				'copy:dist',
-				'rev',
-				'connect:dev:keepalive'
-			]);
-		}
-
-		if (target === 'local-api') {
-			return grunt.task.run(_.flatten(['ngconstant:localApi', localDevTasks]));
-		}
-
-		return grunt.task.run(_.flatten(['ngconstant:dev', localDevTasks]));
-	});
-
 
 	var buildTasks =[
+		'sass', 'grunt-coffee',
 		'asset-linker:devJs', 'asset-linker:devCss',
 		'watch'
 	];
